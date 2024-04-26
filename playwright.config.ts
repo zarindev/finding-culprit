@@ -32,7 +32,7 @@ export default defineConfig({
     screenshot: "on",
     video: "retain-on-failure",
     trace: "on",
-    headless: false,
+    headless: true,
     //storageState: "./playwright/.auth/auth.json"
     launchOptions: {
       slowMo: 1500,

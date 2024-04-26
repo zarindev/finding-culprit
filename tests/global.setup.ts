@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-require('dotenv').config();
 
 test("Login Setup", async({page}) => {
 

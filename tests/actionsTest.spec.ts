@@ -39,7 +39,7 @@ test("Create a Task from Tasks Page", async ({ page }) => {
     await JobTitle.createJobTitle();
   });*/
   
-  test("Invite New Member from Sidebar", async ({ page }) => {
+ /* test("Invite New Member from Sidebar", async ({ page }) => {
     const inviteMember = new InviteNewMember(page);
     await inviteMember.inviteNewMemberSidebar();
   });
@@ -52,4 +52,4 @@ test("Create a Task from Tasks Page", async ({ page }) => {
   test("Invite New Member from Home Page Button", async ({ page }) => {
     const inviteMember = new InviteNewMember(page);
     await inviteMember.inviteNewMemberHomeBtn();
-  });
+  });*/

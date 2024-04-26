@@ -1,4 +1,4 @@
-import { type Locator, type Page } from "@playwright/test";
+import { expect, type Locator, type Page } from "@playwright/test";
 
 
 export class NavigateToHomePage {
@@ -10,5 +10,6 @@ export class NavigateToHomePage {
 
     async navigateToHomePage() {
         await this.page.goto(`https://go.tallyfy.com/9710244f43f053c2618dd09613e3c56d/dashboard`);
+        await expect(this.page).toHaveTitle(/Tallyfy/);
     }
 }

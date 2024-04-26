@@ -1,5 +1,5 @@
 import { type Locator, type Page } from "@playwright/test";
-require('dotenv').config();
+
 
 export class NavigateToHomePage {
     readonly page: Page;

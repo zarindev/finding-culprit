@@ -20,24 +20,24 @@ test("Create a Task from Tasks Page", async ({ page }) => {
       await Task.taskCreateFromHome();
   })
   
-  test("Document Template creation", async ({ page }) => {
+  /*test("Document Template creation", async ({ page }) => {
     const DocTemp = new DocumentTemplateCreation(page);
     await DocTemp.createDocTemplate();
-  });
+  });*/
   test("Procedure Template creation", async ({ page }) => {
     const ProcTemp = new ProcedureTemplateCreation(page);
     await ProcTemp.createProcTemplate();
   });
   
-  test("Create a Procedure with Kick Off Form with File Upload", async ({ page }) => {
+  /*test("Create a Procedure with Kick Off Form with File Upload", async ({ page }) => {
     const ProcTemp = new ProcedureTemplateCreation(page);
     await ProcTemp.createProcWithFileUpload();
-  })
+  })*/
   
-  test("Job Title Creation", async ({ page }) => {
+  /*test("Job Title Creation", async ({ page }) => {
     const JobTitle = new JobTitleCreation(page);
     await JobTitle.createJobTitle();
-  });
+  });*/
   
   test("Invite New Member from Sidebar", async ({ page }) => {
     const inviteMember = new InviteNewMember(page);

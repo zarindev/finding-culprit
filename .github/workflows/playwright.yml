@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Testing Tallyfy
 on:
   workflow_dispatch:
   push:
@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ main, master ]
 jobs:
-  Test Tallyfy UI:
+  test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:

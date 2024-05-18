@@ -1,5 +1,20 @@
 import { defineConfig, devices } from "@playwright/test";
 
+
+const capabilities = {
+  'browserName': 'Chrome', // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
+  'browserVersion': 'latest',
+  'LT:Options': {
+    'platform': 'Windows 10',
+    'build': 'Playwright Sample Build',
+    'name': 'Playwright Sample Test',
+    'user': "masterofalltradezarin",
+    'accessKey': "QKEhzReYxcPM7TD0QP7IRi5PXPhjlADKkQlgmIxoThWlh0uJPC",
+    'network': true,
+    'video': true,
+    'console': true
+  }
+}
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -25,6 +40,9 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   
   use: {
+    connectOptions: {
+      wsEndpoint: `wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`
+    },
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
